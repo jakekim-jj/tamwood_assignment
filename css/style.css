@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+/*For Smartphone*/
+@media (min-width:300px){
+
+    h2{
+        text-align:left;
+        margin-left:3%;
+        color:steelblue;
+    }
+    
+    hr{
+        width:95%;
+        margin-left:1.5%;
+        border: 1.5px solid steelblue;
+    }
+
+    .project{
+        padding:2%;
+    }
+
+    .project div{
+        margin-top:2%;
+    }
+
+    .contact-form{
+        padding:3%;
+    }
+
+
+    .contact-form input, select, textarea{
+        width:90%;
+        margin-left:3%;
+    }
+
+
+    footer{
+        background-color:gray;
+        color:whitesmoke;
+        padding:1.5%;
+        text-align:center;
+        font-weight: bold;
+        
+    }
+
+    footer .my_info{
+        margin-top:2%;
+        margin-left:8%;
+        font-weight:lighter;
+        color:black;
+        text-align:left;
+    
+    }
+
+}
+
+/*For Tablet*/
+@media (min-width:700px){
+
+
+}
+
+
+/*For Desktop*/
+@media (min-width:1000px){
+
+
+}
+
+
+/*For Higher version*/
+@media (min-width:1200px){
+
+
+}
+
