@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu&display=swap');
 *{
     padding:0;
     margin:0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*For Smartphone*/
@@ -12,18 +17,50 @@
         color:steelblue;
     }
     
-    hr{
-        width:95%;
+    .my_hr {
+        width:92%;
         margin-left:1.5%;
-        border: 1.5px solid steelblue;
+        border: 1.5px solid rgb(50, 120, 177);
     }
 
-    .project{
-        padding:2%;
+    .about{
+        padding:3%;
+    }
+    
+    .accordion-body{
+        padding:0 !important;
     }
 
-    .project div{
+    #testing_skill{
+        padding:3%;
+    }
+
+    .experience{
+        padding:3%;
+    }
+
+    .experience div{
         margin-top:2%;
+        border: 1px solid lightsteelblue;
+        padding:3%;
+    }
+
+    .experience ul {
+        padding-left:5%;
+    }
+
+    .education article{
+        padding:3%;
+    }
+
+    .accordion
+    {
+        width:92%;
+        margin-left:3%;
+    }
+
+    .accordion h2{
+        margin-left:0;
     }
 
     .contact-form{
