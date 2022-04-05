@@ -26,6 +26,18 @@ body{
     .about{
         padding:3%;
     }
+
+    .my_pic{
+        background-image: url('/img/my_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+
+        width:92%;
+        height:25vh;
+        margin-left:3%;
+
+    }
     
     .accordion-body{
         padding:0 !important;
@@ -54,24 +66,6 @@ body{
     }
     .education article{
         padding:3%;
-    }
-
-    .tamwood{
-        background-image: url('/img/tamwood.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position:left;
-        height:18vh;
-        border:1px solid red;
-    }
-
-    .koreatech{
-        background-image: url('/img/koreatech.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position:left;
-        height:18vh;
-        border:1px solid red;
     }
 
     .accordion
@@ -131,6 +125,51 @@ body{
 /*For Tablet*/
 @media (min-width:700px){
 
+
+    .education div{
+        padding:5%;
+    }
+
+    .education aside{
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+        border:1px solid slateblue;
+        border-radius:8px;
+        float:left;
+    }
+
+    .tamwood{
+        background-image: url('/img/tamwood.png');
+        width:20vh;
+        height:10vh;
+        margin:1%;
+        margin-right:3%;
+
+    }
+
+    .koreatech {
+        background-image: url('/img/koreatech.png');
+        width:20vh;
+        height:10vh;
+        margin:1%;
+        margin-right:3%;
+    }
+
+    .istqb{
+        background-image: url('/img/istqb.png');
+        width:10vh;
+        height:8vh;
+
+    }.ielts{
+        background-image: url('/img/ielts.png');
+        width:10vh;
+        height:8vh;
+
+
+    }
+
     .contact-form{
         padding:1%;
         margin-left:5%;
@@ -158,6 +197,7 @@ body{
 
     footer .my_info{
         text-align: center;
+        margin-left:0;
     }
 
     footer .footer_ul{
@@ -171,6 +211,18 @@ body{
 
 /*For Desktop*/
 @media (min-width:1000px){
+
+    .my_pic{
+        background-image: url('/img/my_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width:50%;
+        height:25vh;
+        margin-left:3%;
+        float:left;
+
+    }
 
 
 }
