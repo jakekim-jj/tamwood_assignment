@@ -12,11 +12,18 @@
 </head>
 <body>
     <header>
+        <nav class="">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </nav>
 
 
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h2>About Me</h2><hr class="my_hr">
             <ul>
                 <li>Lead overall QA processes with test scenario design, progress scheduling, and collecting requirements from clients</li>
@@ -28,12 +35,12 @@
         </section>
 
         <!--Experience-->
-        <section class="experience">
-            <h2>Project</h2><hr class="my_hr">
+        <section class="experience" id="experience">
+            <h2>Experience</h2><hr class="my_hr">
 
             <article>
                 <div class="qoffice">
-                    <h3>Q-Office / (2021.05 - 2022.10)</h3>
+                    <h3>Q-Office / (2020.05 - 2021.10)</h3>
                     <p>Service QA Team / Test Engineer</p>
                     <ul>
                         <li> Self-Authentication</li>
@@ -41,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="kaonsoft">
-                    <h3>Kaonsoft / (2016.08 - 2021.04) </h3>
+                    <h3>Kaonsoft / (2016.08 - 2020.04) </h3>
                     <p>QA Part / Test Engineer</p>
                     <ul> - Solution
                         <li>Platform for B2B</li>
@@ -61,7 +68,7 @@
         </section>
 
         <!--Skills-->
-        <section>
+        <section class="skills" id="skills">
             <h2>Skills</h2><hr class="my_hr">
 
             <div class="accordion" id="accordionExample">
@@ -116,11 +123,12 @@
         </section>
 
         <!--Education-->
-        <section class="education">
+        <section class="education" id="education">
             <h2>Education</h2><hr class="my_hr">
 
-            <article>
+            <article class="study">
                 <h3>Study</h3>
+                <aside class="tamwood"> </aside>
                 <h5>Tamwood College</h5>
                 <p>
                     - Web Development
@@ -128,17 +136,20 @@
                 </p>
 
                 <h5>KOREATECH <br><span style="font-size:15px">(Korea University of Technology and Education)</span></h5>
+                <aside class="koreatech"></aside>
                 <p>
                     - Bachelor of Science in Computer Engineering <br><time> 2009-03~2017/08</time>
                 </p>
 
             </article>
 
-            <article>
+            <article class="certification">
                 <h3>Certification</h3>
                 <ul>
                     <li>Engineering Information Processing – Human Resources Development Service of Korea</li>
-                    <li>ISTQB (International Software Testing Qualification Board) CTFL – English version</li>
+                    <aside class="istqb"> </aside>
+                    <li>ISTQB (International SW Testing Qualification Board) CTFL – Eng. version</li>
+                    <aside class="ielts"> </aside>
                     <li>IELTS Overll 6.0</li>
                 </ul>
 
@@ -147,25 +158,32 @@
         </section>
 
         <!--Contact-->
-        <section>
+        <section class="contact" id="contact">
             <h2>Contact</h2><hr class="my_hr">
 
             <form class="contact-form">
-                <label for="Name">Name :</label>
-                <input type="text" name="name" id="name" placeholder="Fill your name">
-
-                <lable for="Email">Email :</lable>
-                <input type="email" name="email" id="email" placeholder="info@exmaple.com">
-
-                <label for="subejct">Subject: </label>
-                <select>
-
-                </select>
-
-                <label for="Message">Message :</label>
-                <textarea id="message" name="message" placeholder="Your message"></textarea>
-
+                <div>
+                    <label for="Name">Name :</label>
+                    <input type="text" name="name" id="name" placeholder="Fill your name">
+                </div>
+                <div>
+                    <label for="Email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="info@exmaple.com">
+                </div>
+                <div>
+                    <label for="subejct">Subject: </label>
+                    <select name="subject" id="subject">
+                        <option value="job">Job hiring</option>
+                        <option value="like">Like</option>
+                        <option value="ask">Ask</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Your message"></textarea>
+                </div>
             </form>
+            
         </section>
 
 
@@ -174,10 +192,12 @@
         Test Engineer / Web Development - Jake Kim
         <article class="my_info">
             <h4>< Jake's Information ></h4>
-            <p>- Email : jakekim4484@gmail.com</p>
-            <p>- Tel : 778) 882-8548</p>
-            <p>- LinkedIn : www.linkedin.com/in/jeongjin-kim </p>
-            <p>- Location : Vancouver, Canada</p>
+            <ul class="footer_ul">
+                <li>- Email : jakekim4484@gmail.com</li>
+                <li>- Tel : 778) 882-8548</li>
+                <li>- LinkedIn : www.linkedin.com/in/jeongjin-kim </li>
+                <li>- Location : Vancouver, Canada</li>
+            </ul>
         </article>
         </article>
     </footer>

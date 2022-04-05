@@ -49,8 +49,29 @@ body{
         padding-left:5%;
     }
 
+    .education {
+        margin-top:3%;
+    }
     .education article{
         padding:3%;
+    }
+
+    .tamwood{
+        background-image: url('/img/tamwood.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:left;
+        height:18vh;
+        border:1px solid red;
+    }
+
+    .koreatech{
+        background-image: url('/img/koreatech.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:left;
+        height:18vh;
+        border:1px solid red;
     }
 
     .accordion
@@ -67,10 +88,17 @@ body{
         padding:3%;
     }
 
+    .contact-form label{
+        margin-left:3%;
+    }
+
 
     .contact-form input, select, textarea{
         width:90%;
-        margin-left:3%;
+        margin-left:3% !important;
+        margin-top:1%;
+        margin-bottom:1%;
+
     }
 
 
@@ -92,10 +120,50 @@ body{
     
     }
 
+    footer .footer_ul{
+        list-style: none;
+        padding-left:0;
+    }
+
+
 }
 
 /*For Tablet*/
 @media (min-width:700px){
+
+    .contact-form{
+        padding:1%;
+        margin-left:5%;
+        flex-direction: column;
+        display:flex;
+        width:90%;
+    }
+
+    .contact-form label{
+        font-size:20px;
+        width:15%;
+    }
+
+    .contact-form input, select{
+        height:3vh;
+        width:65%;
+        margin:2% 0 2% 0;
+    }
+
+    .contact-form textarea{
+        margin-top:1%;
+        width:84%;
+    }
+
+
+    footer .my_info{
+        text-align: center;
+    }
+
+    footer .footer_ul{
+        text-align: center;
+        padding:0;
+    }
 
 
 }
