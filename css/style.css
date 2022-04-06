@@ -11,6 +11,38 @@ body{
 /*For Smartphone*/
 @media (min-width:300px){
 
+    nav{
+        width:100%;
+    }
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-left:0;
+    }
+
+    nav li{
+        color:steelblue;
+        border:1px solid steelblue;
+        width:20%;
+        text-align: center;
+    }
+
+    nav a {
+        color:steelblue;
+        text-decoration: none;
+        font-size:10px;
+        font-weight:bold;
+    }
+    nav li:hover{
+        background-color: steelblue;
+        color:whitesmoke;
+    }
+    
+    nav a:hover{
+        color:whitesmoke;
+    }
+    
     h2{
         text-align:left;
         margin-left:3%;
@@ -95,6 +127,18 @@ body{
 
     }
 
+    .contact-form .btn_form{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    
+    .btn_form button{
+        background-color: steelblue;
+        color:whitesmoke;
+        border-radius:5px;
+        padding:1%;
+    }
+
 
     footer{
         background-color:gray;
@@ -124,6 +168,11 @@ body{
 
 /*For Tablet*/
 @media (min-width:700px){
+
+    nav a {
+        font-size:18px;
+        font-weight:bold;
+    }
 
 
     .education div{
@@ -212,6 +261,13 @@ body{
 /*For Desktop*/
 @media (min-width:1000px){
 
+    .about{
+        height:auto;
+    }
+    .about div{
+        width:80%;
+    }
+
     .my_pic{
         background-image: url('/img/my_pic.png');
         background-size: contain;
@@ -219,9 +275,15 @@ body{
 
         width:50%;
         height:25vh;
-        margin-left:3%;
+        margin-left:2%;
         float:left;
+    }
 
+    .btn_form button{
+        background-color: steelblue;
+        color:whitesmoke;
+        border-radius:5px;
+        padding:0.5%;
     }
 
 

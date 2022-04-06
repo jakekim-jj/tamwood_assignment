@@ -12,12 +12,14 @@
 </head>
 <body>
     <header>
-        <nav class="">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
 
 
@@ -25,13 +27,15 @@
     <main>
         <section class="about" id="about">
             <h2>About Me</h2><hr class="my_hr">
+            <div>
             <aside class="my_pic"> </aside>
-            <ul>
-                <li>Lead overall QA processes with test scenario design, progress scheduling, and collecting requirements from clients</li>
-                <li>Perform testing and test managing on various domains, especially specialized in web/app frontend test on various browsers/devices</li>
-                <li>Independently execute QA on a large component, providing great feedbacks to the developers</li>
-                <li> Acquire high test coverage to detect various bugs and reproduce bug scenarios to assist debugging</li>
-            </ul>
+                <ul>
+                    <li>Lead overall QA processes with test scenario design, progress scheduling, and collecting requirements from clients</li>
+                    <li>Perform testing and test managing on various domains, especially specialized in web/app frontend test on various browsers/devices</li>
+                    <li>Independently execute QA on a large component, providing great feedbacks to the developers</li>
+                    <li> Acquire high test coverage to detect various bugs and reproduce bug scenarios to assist debugging</li>
+                </ul>
+            </div>
 
         </section>
 
@@ -187,6 +191,14 @@
                 <div>
                     <label for="Message">Message :</label>
                     <textarea id="message" name="message" placeholder="Your message"></textarea>
+                </div>
+                <div class="btn_form">
+                    <button>
+                        SUBMIT
+                    </button>
+                    <button>
+                        CLEAR
+                    </button>
                 </div>
             </form>
             
