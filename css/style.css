@@ -1,41 +1,147 @@
+<<<<<<< HEAD
 /* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,300&display=swap'); */
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu&display=swap');
+>>>>>>> fortest
 *{
     padding:0;
     margin:0;
 }
 
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /*For Smartphone*/
 @media (min-width:300px){
 
+    nav{
+        width:100%;
+    }
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-left:0;
+    }
+
+    nav li{
+        color:steelblue;
+        border:1px solid steelblue;
+        width:20%;
+        text-align: center;
+    }
+
+    nav a {
+        color:steelblue;
+        text-decoration: none;
+        font-size:10px;
+        font-weight:bold;
+    }
+    nav li:hover{
+        background-color: steelblue;
+        color:whitesmoke;
+    }
+    
+    nav a:hover{
+        color:whitesmoke;
+    }
+    
     h2{
         text-align:left;
         margin-left:3%;
         color:steelblue;
     }
     
-    hr{
-        width:95%;
+    .my_hr {
+        width:92%;
         margin-left:1.5%;
-        border: 1.5px solid steelblue;
+        border: 1.5px solid rgb(50, 120, 177);
     }
 
-    .project{
-        padding:2%;
+    .about{
+        padding:3%;
     }
 
-    .project div{
+    .my_pic{
+        background-image: url('/img/my_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+
+        width:92%;
+        height:25vh;
+        margin-left:3%;
+
+    }
+    
+    .accordion-body{
+        padding:0 !important;
+    }
+
+    #testing_skill{
+        padding:3%;
+    }
+
+    .experience{
+        padding:3%;
+    }
+
+    .experience div{
         margin-top:2%;
+        border: 1px solid lightsteelblue;
+        padding:3%;
+    }
+
+    .experience ul {
+        padding-left:5%;
+    }
+
+    .education {
+        margin-top:3%;
+    }
+    .education article{
+        padding:3%;
+    }
+
+    .accordion
+    {
+        width:92%;
+        margin-left:3%;
+    }
+
+    .accordion h2{
+        margin-left:0;
     }
 
     .contact-form{
         padding:3%;
     }
 
+    .contact-form label{
+        margin-left:3%;
+    }
+
 
     .contact-form input, select, textarea{
         width:90%;
-        margin-left:3%;
+        margin-left:3% !important;
+        margin-top:1%;
+        margin-bottom:1%;
+
+    }
+
+    .contact-form .btn_form{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    
+    .btn_form button{
+        background-color: steelblue;
+        color:whitesmoke;
+        border-radius:5px;
+        padding:1%;
     }
 
 
@@ -57,10 +163,101 @@
     
     }
 
+    footer .footer_ul{
+        list-style: none;
+        padding-left:0;
+    }
+
+
 }
 
 /*For Tablet*/
 @media (min-width:700px){
+
+    nav a {
+        font-size:18px;
+        font-weight:bold;
+    }
+
+
+    .education div{
+        padding:5%;
+    }
+
+    .education aside{
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+        border:1px solid slateblue;
+        border-radius:8px;
+        float:left;
+    }
+
+    .tamwood{
+        background-image: url('/img/tamwood.png');
+        width:20vh;
+        height:10vh;
+        margin:1%;
+        margin-right:3%;
+
+    }
+
+    .koreatech {
+        background-image: url('/img/koreatech.png');
+        width:20vh;
+        height:10vh;
+        margin:1%;
+        margin-right:3%;
+    }
+
+    .istqb{
+        background-image: url('/img/istqb.png');
+        width:10vh;
+        height:8vh;
+
+    }.ielts{
+        background-image: url('/img/ielts.png');
+        width:10vh;
+        height:8vh;
+
+
+    }
+
+    .contact-form{
+        padding:1%;
+        margin-left:5%;
+        flex-direction: column;
+        display:flex;
+        width:90%;
+    }
+
+    .contact-form label{
+        font-size:20px;
+        width:15%;
+    }
+
+    .contact-form input, select{
+        height:3vh;
+        width:65%;
+        margin:2% 0 2% 0;
+    }
+
+    .contact-form textarea{
+        margin-top:1%;
+        width:84%;
+    }
+
+
+    footer .my_info{
+        text-align: center;
+        margin-left:0;
+    }
+
+    footer .footer_ul{
+        text-align: center;
+        padding:0;
+    }
 
 
 }
@@ -68,6 +265,31 @@
 
 /*For Desktop-*/
 @media (min-width:1000px){
+
+    .about{
+        height:auto;
+    }
+    .about div{
+        width:80%;
+    }
+
+    .my_pic{
+        background-image: url('/img/my_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width:50%;
+        height:25vh;
+        margin-left:2%;
+        float:left;
+    }
+
+    .btn_form button{
+        background-color: steelblue;
+        color:whitesmoke;
+        border-radius:5px;
+        padding:0.5%;
+    }
 
 
 }
