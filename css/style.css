@@ -13,36 +13,60 @@ body{
 /*For Smartphone*/
 @media (min-width:300px){
 
-    nav{
+
+    .navigation {
         width:100%;
     }
-    nav ul{
+
+    .navigation ul{
         display:flex;
         justify-content: space-evenly;
         list-style: none;
         padding-left:0;
     }
 
-    nav li{
+    .navigation li{
         color:steelblue;
         border:1px solid steelblue;
         width:20%;
         text-align: center;
     }
 
-    nav a {
+    .navigation a {
         color:steelblue;
         text-decoration: none;
         font-size:10px;
         font-weight:bold;
     }
-    nav li:hover{
+    .navigation li:hover{
         background-color: steelblue;
         color:whitesmoke;
     }
     
-    nav a:hover{
+    .navigation a:hover{
         color:whitesmoke;
+    }
+
+
+    .header [class*="bg-"]{
+        width:100%;
+        height:35vh; 
+    }
+
+    .header .bg-1{
+        background: url("/img/header_bg2.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .header .bg-2{
+        background: url("/img/header_bg1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .header .bg-3{
+        background: url("/img/header_bg3.jpg");
+        background-position: center;
+        background-size: cover;
     }
     
     h2{
