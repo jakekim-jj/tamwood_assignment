@@ -47,10 +47,9 @@ body{
         color:whitesmoke;
     }
 
-
     .header [class*="bg-"]{
         width:100%;
-        height:35vh; 
+        height:30vh; 
     }
 
     .header .bg-1{
@@ -83,18 +82,6 @@ body{
 
     .about{
         padding:3%;
-    }
-
-    .my_pic{
-        background-image: url('/img/my_pic.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position:center;
-
-        width:92%;
-        height:25vh;
-        margin-left:3%;
-
     }
     
     .accordion-body{
@@ -175,6 +162,19 @@ body{
         
     }
 
+    .my_pic{
+        display:none;
+        background-image: url('/img/my_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+
+        width:92%;
+        height:25vh;
+        margin-left:3%;
+
+    }
+
     footer .my_info{
         margin-top:2%;
         margin-left:8%;
@@ -195,14 +195,23 @@ body{
 /*For Tablet*/
 @media (min-width:700px){
 
+
     nav a {
         font-size:18px;
         font-weight:bold;
     }
 
+    .header{
+        height:30vh;
+    }
 
     .education div{
-        padding:5%;
+        padding:3%;
+    }
+    .education > div > li{
+        padding:2%;
+        padding-top:5%;
+        width:60%;
     }
 
     .education aside{
@@ -215,9 +224,20 @@ body{
         float:left;
     }
 
+    .certification{
+        width:96%;
+    }
+
+    .certification div{
+        height:10vh;
+    }
+    .certification  li{
+        margin-left:5%;
+    }
+
     .tamwood{
         background-image: url('/img/tamwood.png');
-        width:20vh;
+        width:18vh;
         height:10vh;
         margin:1%;
         margin-right:3%;
@@ -226,7 +246,7 @@ body{
 
     .koreatech {
         background-image: url('/img/koreatech.png');
-        width:20vh;
+        width:18vh;
         height:10vh;
         margin:1%;
         margin-right:3%;
@@ -234,15 +254,13 @@ body{
 
     .istqb{
         background-image: url('/img/istqb.png');
-        width:10vh;
+        width:12vh;
         height:8vh;
 
     }.ielts{
         background-image: url('/img/ielts.png');
-        width:10vh;
+        width:12vh;
         height:8vh;
-
-
     }
 
     .contact-form{
@@ -255,29 +273,42 @@ body{
 
     .contact-form label{
         font-size:20px;
-        width:15%;
+        width:14%;
     }
 
     .contact-form input, select{
-        height:3vh;
+        height:4vh;
         width:65%;
         margin:2% 0 2% 0;
     }
 
     .contact-form textarea{
         margin-top:1%;
-        width:84%;
+        width:82%;
     }
 
 
+    footer div{
+        display:flex;
+        justify-content: space-between;
+    }
+
     footer .my_info{
-        text-align: center;
-        margin-left:0;
+        text-align: left;
+        width:55%;
+        flex-direction: row;
+        padding-top:5%;
     }
 
     footer .footer_ul{
-        text-align: center;
-        padding:0;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .my_pic{
+        display:block;
+        float:left;
+        width:43%;
     }
 
 
